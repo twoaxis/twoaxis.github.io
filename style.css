@@ -4,7 +4,6 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	direction: rtl;
 	font-family: 'Cairo', sans-serif;
 }
 header {
@@ -15,7 +14,7 @@ header {
 }
 header div#content {
 	height: 100vh;
-	width: 100vw;
+	width: 100%;
 	color: white;
 	position: fixed;
 	top: 0;
@@ -24,10 +23,21 @@ header div#content {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	overflow: hidden;
 }
 header h1 {
 	margin-bottom: -10px;
 	font-size: 50px;
+}
+header div#content a {
+	display: block;
+	background: white;
+	color: black;
+	text-decoration: none;
+	padding: 5px 20px;
+	margin-top: 10px;
+	font-size: 18px;
+	border-radius: 10px;
 }
 header div#content div  {
 	position: absolute;
