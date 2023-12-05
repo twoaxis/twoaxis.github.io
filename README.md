@@ -1,2 +1,2 @@
-# Official website for Night Hunters
+# Official website for TwoAxis
 
