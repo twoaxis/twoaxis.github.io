@@ -3,7 +3,7 @@ header {
 	align-items: center;
 	justify-content: center;
 	width: 1000px;
-	margin: 50px auto;
+	margin: 50px auto 100px;
 }
 header div + div {
 	margin-left: 10px;
@@ -22,12 +22,51 @@ header div h2 {
 	font-weight: 300;
 	font-size: 25px;
 }
+
+section#about {
+	text-align: center;
+	background: linear-gradient(to bottom, #a72222, rgb(94, 25, 25));
+	color: white;
+	padding: 100px 20px;
+}
+section#about h1 {
+	font-size: 40px;
+}
+section#about div#services {
+	display: flex;
+	gap: 50px;
+	width: 1000px;
+	margin: 50px auto 0;
+}
+section#about div#services div {
+	flex: 1;
+}
+
+section#about div#services div label {
+	font-size: 60px;
+}
+
+section#about div#services div h2 {
+	font-size: 25px;
+	margin: 20px 0 10px;
+	font-weight: 400;
+}
+
+section#about div#services div p {
+	font-size: 16px;
+	text-align: justify;
+	font-weight: 300;
+}
 @media (max-width: 1100px) {
 	header {
 		width: 90%;
 	}
 	header div img {
 		width: 500px;
+	}
+	
+	section#about div#services {
+		width: 90%;
 	}
 }
 @media (max-width: 900px) {
@@ -52,5 +91,17 @@ header div h2 {
 	
 	header div + div {
 		margin: 50px 0 0 0;
+	}
+	
+	section#about div#services {
+		flex-direction: column;
+		align-items: center;
+	}
+	
+	section#about div#services div {
+		width: 70%;
+	}
+	section#about div#services div p {
+		text-align: center;
 	}
 }
