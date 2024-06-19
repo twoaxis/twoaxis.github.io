@@ -1,0 +1,44 @@
+header {
+	width: 900px;
+	margin: 50px auto;
+}
+header h1 {
+	margin-bottom: 20px;
+	font-size: 70px;
+}
+header p {
+	text-align: justify;
+	font-size: 20px;
+}
+section#word {
+	background: linear-gradient(to bottom, #a72222, rgb(94, 25, 25));
+}
+section#word div#content {
+	display: flex;
+	width: 1000px;
+	margin: 0 auto;
+	padding: 50px 0;
+	color: white;
+	align-items: center;
+	justify-content: center;
+	gap: 150px;
+}
+section#word div#content div p {
+	font-style: italic;
+	font-size: 20px;
+	font-weight: 300;
+	margin-bottom: 30px;
+}
+section#word div#content div img {
+	width: 300px;
+	box-shadow: 10px 10px 0 #ffffff;
+	border-radius: 5px 50%;
+}
+
+section#word div#content div h1 {
+	font-size: 40px;
+}
+section#word div#content div h2 {
+	font-weight: 300;
+	font-size: 20px;
+}
