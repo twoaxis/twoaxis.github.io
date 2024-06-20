@@ -1,0 +1,45 @@
+section#choose {
+	text-align: center;
+	margin: 40px 20px;
+}
+section#choose h1 {
+	font-size: 50px;
+	color: #a72222;
+}
+section#choose h2 {
+	font-size: 20px;
+	font-weight: 400;
+}
+section#choose div#pros {
+	display: grid;
+	width: 800px;
+	margin: 30px auto 0;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	gap: 20px;
+}
+section#choose div#pros div {
+	padding: 40px;
+	flex: 1;
+	border-radius: 10px;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+	border-bottom: 3px solid #a72222;
+}
+
+section#choose div#pros div h3 {
+	font-size: 30px;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+	border-bottom: 3px solid #a72222;
+}
+section#choose div#pros div p {
+	font-size: 15px;
+	text-align: left;
+	line-height: 20px;
+}
+
+@media (max-width: 1000px) {
+	
+	section#choose div#pros {
+		width: 90%;
+	}
+}
