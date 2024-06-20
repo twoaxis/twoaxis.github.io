@@ -71,6 +71,7 @@ section#members div#member-list div img {
 section#members div#member-list div h1 {
 	font-size: 30px;
 	margin-top: 20px;
+	text-wrap: nowrap;
 }
 section#members div#member-list div h2 {
 	font-size: 18px;
