@@ -36,11 +36,11 @@ section#choose div#pros div p {
 	text-align: left;
 	line-height: 20px;
 }
-section#technologies  {
+section#technologies {
 	text-align: center;
 	margin: 100px 0;
 }
-section#technologies h1 {
+section#technologies h2 {
 	font-size: 50px;
 	color: #a72222;
 }
@@ -66,11 +66,10 @@ section#technologies div#tech div img {
 }
 
 @media (max-width: 1000px) {
-	
 	section#choose div#pros {
 		width: 90%;
 	}
-	
+
 	section#technologies div#tech {
 		width: 90%;
 	}
