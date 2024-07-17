@@ -1,8 +1,10 @@
-section#choose {
+section#choose,
+section#process {
 	text-align: center;
 	margin: 40px 20px;
 }
-section#choose h1 {
+section#choose h1,
+section#process h2 {
 	font-size: 50px;
 	color: #a72222;
 }
@@ -11,13 +13,28 @@ section#choose h2 {
 	font-weight: 400;
 }
 section#choose div#pros {
-	display: grid;
 	width: 800px;
+}
+section#process div#steps {
+	width: 900px;
+}
+section#choose div#pros,
+section#process div#steps {
+	display: grid;
 	margin: 30px auto 0;
 	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 	gap: 20px;
 }
-section#choose div#pros div {
+
+/* Center the last element in the grid */
+section#process div#steps div:nth-last-child(1) {
+	grid-column: 1 / -1; /* Span across both columns */
+	justify-self: center; /* Center horizontally */
+	width: 400px;
+}
+
+section#choose div#pros div,
+section#process div#steps div {
 	padding: 40px;
 	flex: 1;
 	border-radius: 10px;
@@ -25,13 +42,15 @@ section#choose div#pros div {
 	border-bottom: 3px solid #a72222;
 }
 
-section#choose div#pros div h3 {
+section#choose div#pros div h3,
+section#process div#steps div h3 {
 	font-size: 30px;
 	margin-bottom: 10px;
 	padding-bottom: 10px;
 	border-bottom: 3px solid #a72222;
 }
-section#choose div#pros div p {
+section#choose div#pros div p,
+section#process div#steps div p {
 	font-size: 15px;
 	text-align: left;
 	line-height: 20px;
@@ -66,7 +85,8 @@ section#technologies div#tech div img {
 }
 
 @media (max-width: 1000px) {
-	section#choose div#pros {
+	section#choose div#pros,
+	section#process div#steps {
 		width: 90%;
 	}
 
