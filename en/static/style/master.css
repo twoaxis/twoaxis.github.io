@@ -60,7 +60,7 @@ nav div:nth-of-type(3) a {
 	font-size: 15px;
 }
 
-nav div:nth-of-type(3) button {
+nav div:nth-of-type(3) button#expand-btn{
 	background: none;
 	border: none;
 	font-size: 30px;
@@ -68,6 +68,14 @@ nav div:nth-of-type(3) button {
 	display: none;
 	cursor: pointer;
 	z-index: 101;
+}
+nav div:nth-of-type(3) button#lang {
+	background: none;
+	border: none;
+	margin-right: 30px;
+	cursor: pointer;
+	z-index: 101;
+	font-size: 15px;
 }
 
 @media (max-width: 800px) {
@@ -121,7 +129,7 @@ footer label {
 		flex: none;
 	}
 	
-	nav div:nth-of-type(3) button {
+	nav div:nth-of-type(3) button#expand-btn {
 		display: initial;
 	}
 	
