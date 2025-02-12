@@ -19,7 +19,20 @@
 </head>
 <body>
 <script>
-  window.location.href = "en/";
+
+  if(localStorage.getItem('lang')) {
+    if(localStorage.getItem('lang') === 'en' || localStorage.getItem('lang') === 'ar') {
+      window.location.href = '' + localStorage.getItem('lang');
+    }
+    else {
+      localStorage.setItem('lang', 'en');
+      window.location.href = 'en/';
+    }
+  }
+  else {
+    localStorage.setItem('lang', 'en');
+    window.location.href = 'en/';
+  }
 </script>
 </body>
 </html>

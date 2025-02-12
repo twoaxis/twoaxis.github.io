@@ -1,0 +1,89 @@
+section#choose {
+	text-align: center;
+	margin: 40px 20px;
+}
+section#choose h1 {
+	font-size: 50px;
+	color: #a72222;
+}
+section#choose h2 {
+	font-size: 20px;
+	font-weight: 400;
+}
+section#choose div#pros {
+	display: grid;
+	width: 800px;
+	margin: 30px auto 0;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	gap: 20px;
+}
+section#choose div#pros div {
+	padding: 40px;
+	flex: 1;
+	border-radius: 10px;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+	border-bottom: 3px solid #a72222;
+}
+
+section#choose div#pros div h3 {
+	font-size: 30px;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+	border-bottom: 3px solid #a72222;
+}
+section#choose div#pros div p {
+	font-size: 15px;
+	text-align: right;
+	line-height: 20px;
+}
+section#process {
+	width: 700px;
+	margin: 0 auto 80px;
+	text-align: center;
+}
+
+section#process h1 {
+	font-size: 50px;
+	margin-bottom: 20px;
+	color: #a72222;
+}
+section#process section#steps div.step {
+	text-align: right;
+	display: flex;
+}
+section#process section#steps div.step + div.step {
+	margin-top: 40px;
+}
+section#process section#steps div.step div:nth-of-type(1) {
+	margin-left: 10px;
+}
+section#process section#steps div.step div:nth-of-type(1) label {
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	color: white;
+	background: #a72222;
+	width: 35px;
+	border-radius: 50%;
+	padding: 5px 0;
+	font-size: 20px;
+	box-shadow: 3px 3px 0 #5c1313;
+}
+
+section#process section#steps div.step div:nth-of-type(2) h2 {
+	color: #a72222;
+	margin: 3px 0 5px;
+}
+section#process section#steps div.step div:nth-of-type(2) p {
+	font-size: 15px;
+}
+@media (max-width: 1000px) {
+	
+	section#choose div#pros {
+		width: 90%;
+	}
+
+	section#process {
+		width: 90%;
+	}
+}
