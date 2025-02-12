@@ -1,0 +1,67 @@
+header {
+	width: 900px;
+	margin: 50px auto;
+}
+header h1 {
+	margin-bottom: 20px;
+	font-size: 70px;
+}
+header p {
+	text-align: justify;
+	font-size: 20px;
+}
+section {
+	margin: 50px 20px;
+	text-align: center;
+}
+section h1 {
+	color: color;
+	font-size: 40px;
+}
+section#links div#list {
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	gap: 20px;
+	width: 900px;
+	margin: 40px auto;
+}
+section#links div#list a {
+	color: white;
+	text-decoration: none;
+	font-size: 40px;
+	background: #a72222;
+	display: block;
+	width: 200px;
+	padding: 20px 0;
+	border-radius: 10px;
+	border-bottom: 5px solid rgb(94, 25, 25);
+}
+section#email {
+	text-align: center;
+}
+section#email a {
+	color: black;
+	background: #ddd;
+	font-family: 'Courier New', Courier, monospace;
+	font-size: 18px;
+	text-decoration: none;
+	padding: 10px 20px;
+	display: block;
+	width: fit-content;
+	margin: 10px auto 0;
+	border-radius: 10px;
+	border-bottom: 3px solid #aaa;
+	
+}
+@media (max-width: 1100px) {
+	
+	header {
+		width: 90%;
+	}
+
+	section#links div#list {
+		width: 90%;
+	}
+
+}
