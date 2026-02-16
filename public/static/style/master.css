@@ -1,11 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: "Roboto", sans-serif;
-	direction: rtl;
+	font-family: "Sen", sans-serif;
+	font-optical-sizing: auto;
 }
 nav {
 	display: flex;
@@ -65,7 +63,7 @@ nav div:nth-of-type(3) button#expand-btn{
 	background: none;
 	border: none;
 	font-size: 30px;
-	margin-right: 20px;
+	margin-left: 20px;
 	display: none;
 	cursor: pointer;
 	z-index: 101;
@@ -73,7 +71,7 @@ nav div:nth-of-type(3) button#expand-btn{
 nav div:nth-of-type(3) button#lang {
 	background: none;
 	border: none;
-	margin-left: 15px;
+	margin-right: 30px;
 	cursor: pointer;
 	z-index: 101;
 	font-size: 15px;
@@ -120,7 +118,6 @@ footer label {
 	margin: 20px 0 0 0;
 	opacity: 0.2;
 	font-size: 15px;
-	direction: ltr;
 }
 
 @media (max-width: 700px) {
@@ -138,7 +135,7 @@ footer label {
 	nav div:nth-of-type(2) {
 		position: fixed;
 		top: 0;
-		left: -100%;
+		right: -100%;
 		background: white;
 		flex-direction: column;
 		justify-content: flex-start;
@@ -147,7 +144,7 @@ footer label {
 		height: 100%;
 		z-index: 100;
 		padding-top: 79px;
-		transition: left 0.5s;
+		transition: right 0.5s;
 	}
 	
 	nav div:nth-of-type(2) a {
