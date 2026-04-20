@@ -70,13 +70,13 @@ header h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 60px;
+    gap: 80px;
     flex-wrap: wrap;
     max-width: 1000px;
     margin: 0 auto;
 }
 .client-logos img {
-    height: 40px;
+    height: 70px;
     object-fit: contain;
     filter: grayscale(100%) opacity(0.6);
     transition: all 0.3s ease;
@@ -341,9 +341,9 @@ section#cta .btn-secondary {
         font-size: 36px;
     }
     .client-logos {
-        gap: 30px;
+        gap: 40px;
     }
     .client-logos img {
-        height: 30px;
+        height: 50px;
     }
 }
