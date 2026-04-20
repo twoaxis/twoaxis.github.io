@@ -1,92 +1,126 @@
 <!DOCTYPE html>
-	<html lang="en">
-	<head>
-		
-		<meta charset="UTF-8">
-		<meta name="keywords" content="TwoAxis, Web Development, Mobile Development, Programming, Egypt">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="theme-color" content="#a72222" />
-		<meta name="description" content="TwoAxis is a team of expert developers specializing in web and mobile app development, focusing on UI/UX design and cutting-edge technology.">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#a72222" />
+    <title>TwoAxis | Our Services</title>
 
-		<meta property="og:title" content="TwoAxis">
-		<meta property="og:description" content="TwoAxis is a team of expert developers specializing in web and mobile app development, focusing on UI/UX design and cutting-edge technology.">
-		<meta property="og:url" content="https://twoaxis.org/services.html">
-		<meta property="og:type" content="website">
+    <meta name="description" content="Explore our premium services including Web Development, Mobile Apps, UI/UX Design, Cloud Hosting, and Cybersecurity.">
+    <meta name="keywords" content="web development services, mobile app development, UI UX design, hosting, cybersecurity, TwoAxis">
 
-		<meta name="twitter:card" content="summary_large_image">
-		<meta name="twitter:title" content="TwoAxis">
-		<meta name="twitter:description" content="TwoAxis is a team of expert developers specializing in web and mobile app development, focusing on UI/UX design and cutting-edge technology.">
-		
-		<link rel="icon" href="static/img/favicon.ico">
-		<link rel="stylesheet" href="static/style/master.css">
-		<link rel="stylesheet" href="static/style/services.css">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-		
-		<script src="static/js/navbar.js"></script>
+    <link rel="icon" href="static/img/favicon.ico">
+    <link rel="stylesheet" href="static/style/utilities.css">
+    <link rel="stylesheet" href="static/style/master.css">
+    <link rel="stylesheet" href="static/style/services.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
-		<title>TwoAxis - Services</title>
-	</head>	
-	<body>
-		<nav>
-			<div>
-				<a href="index.html"><img src="static/img/logo.png" alt="TwoAxis"></a>
-			</div>
-			<div id="nav-links">
-				<a href="about.html">About</a>
-				<a href="services.html">Services</a>
-				<a href="approach.html">Our Approach</a>
-			</div>
-			<div>
-				<a href="contact.html">Contact Us</a>
-				<button id="expand-btn" onclick="toggleNavbar()"><i class="fa-solid fa-bars"></i></button>
-			</div>
-		</nav>
-		<header>
-			<h1>What do we do?</h1>
-		</header>
-		<section id="dev" class="services">
-			<h1>Development</h1>
-			<div class="service-content">
-				<div>
-					<label><i class="fa-solid fa-pen-ruler"></i></label>
-					<h2>UI/UX Design</h2>
-					<p>We design your app's interface to ensure accessbility, ease of use and efficiency.</p>
-				</div>
-				<div>
-					<label><i class="fa-solid fa-code"></i></label>
-					<h2>Web Development</h2>
-					<p>We develop your website and web app according to latest standards.</p>
-				</div>
-				<div>
-					<label><i class="fa-solid fa-mobile-screen-button"></i></label>
-					<h2>Mobile Development</h2>
-					<p>We develop your mobile app with latest technologies for both iOS & Android.</p>
-				</div>
-			</div>
-		</section>
-		<section id="it" class="services">
-			<h1>Information Technology</h1>
-			<div class="service-content">
-				<div>
-					<label><i class="fa-solid fa-server"></i></label>
-					<h2>Hosting</h2>
-					<p>We will host your websites, web apps and web APIs after it has been developed on our servers, ensuring it's accessable worldwide.</p>
-				</div>
-				<div>
-					<label><i class="fa-solid fa-user-secret"></i></label>
-					<h2>Cybersecurity</h2>
-					<p>Our cybersecurity team will continously test and monitor your app and deal with malicious activity.</p>
-				</div>
-			</div>
-		</section>
-		<a href="contact.html" id="contact-btn">Contact Us</a>
-		<footer>
-			<img src="static/img/logo-footer.png" alt="TwoAxis">
-			<div>
-				<a href="https://facebook.com/twoaxis"><i class="fa-brands fa-facebook"></i></a>
-				<a href="https://linkedin.com/company/twoaxis"><i class="fa-brands fa-linkedin"></i></a>
-			</div>
-			<label>(c) TwoAxis 2025. All Rights Reserved.</label>
-		</footer>
-	</body>
+    <script src="static/js/navbar.js" defer></script>
+    <script src="static/js/animations.js" defer></script>
+</head>
+<body>
+    <nav>
+        <div>
+            <a href="index.html" aria-label="Home"><img src="static/img/logo.png" alt="TwoAxis Logo"></a>
+        </div>
+        <div id="nav-links">
+            <a href="about.html">About Us</a>
+            <a href="services.html" class="active">Services</a>
+            <a href="approach.html">Our Process</a>
+        </div>
+        <div>
+            <a href="contact.html" class="nav-cta">Let's Talk</a>
+            <button id="expand-btn" onclick="toggleNavbar()" aria-label="Toggle Menu"><i class="fa-solid fa-bars"></i></button>
+        </div>
+    </nav>
+
+    <main>
+        <header class="page-header animate-on-scroll">
+            <div class="container text-center">
+                <h1>Our Expertise.</h1>
+                <p class="subtitle">Comprehensive digital solutions engineered for growth, performance, and user engagement.</p>
+            </div>
+        </header>
+
+        <section class="detailed-services animate-on-scroll">
+            <div class="container">
+                <!-- UI/UX -->
+                <div class="service-row">
+                    <div class="service-info">
+                        <div class="icon-wrap"><i class="fa-solid fa-pen-ruler"></i></div>
+                        <h2>UI/UX Design</h2>
+                        <p>We don't just make things look pretty; we design for conversion. Our UX researchers and UI designers collaborate to build intuitive, accessible, and stunning interfaces that keep users engaged and reduce bounce rates.</p>
+                        <ul class="feature-list">
+                            <li><i class="fa-solid fa-check"></i> Wireframing & Prototyping</li>
+                            <li><i class="fa-solid fa-check"></i> User Research & Testing</li>
+                            <li><i class="fa-solid fa-check"></i> Design Systems</li>
+                            <li><i class="fa-solid fa-check"></i> Interaction Design</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Web Dev -->
+                <div class="service-row reverse">
+                    <div class="service-info">
+                        <div class="icon-wrap"><i class="fa-solid fa-code"></i></div>
+                        <h2>Web Development</h2>
+                        <p>From high-converting landing pages to complex SaaS platforms, we write clean, scalable code. We focus on blazing-fast load times, SEO optimization, and responsive design so your app works flawlessly on any device.</p>
+                        <ul class="feature-list">
+                            <li><i class="fa-solid fa-check"></i> Custom Web Applications</li>
+                            <li><i class="fa-solid fa-check"></i> E-commerce Solutions</li>
+                            <li><i class="fa-solid fa-check"></i> CMS Integration</li>
+                            <li><i class="fa-solid fa-check"></i> API Development</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Mobile Dev -->
+                <div class="service-row">
+                    <div class="service-info">
+                        <div class="icon-wrap"><i class="fa-solid fa-mobile-screen-button"></i></div>
+                        <h2>Mobile Development</h2>
+                        <p>Reach your users wherever they are. We build high-performance mobile applications for iOS and Android. Whether it's a native app or a cross-platform solution, we ensure a smooth, app-store-ready experience.</p>
+                        <ul class="feature-list">
+                            <li><i class="fa-solid fa-check"></i> iOS & Android Apps</li>
+                            <li><i class="fa-solid fa-check"></i> React Native & Flutter</li>
+                            <li><i class="fa-solid fa-check"></i> App Store Optimization</li>
+                            <li><i class="fa-solid fa-check"></i> Post-launch Support</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Hosting -->
+                <div class="service-row reverse">
+                    <div class="service-info">
+                        <div class="icon-wrap"><i class="fa-solid fa-server"></i></div>
+                        <h2>Hosting & Maintenance</h2>
+                        <p>Don't let downtime cost you money. We provide reliable cloud hosting solutions, continuous monitoring, regular backups, and seamless scaling so your infrastructure grows alongside your business.</p>
+                        <ul class="feature-list">
+                            <li><i class="fa-solid fa-check"></i> Cloud Infrastructure Setup</li>
+                            <li><i class="fa-solid fa-check"></i> 24/7 Monitoring</li>
+                            <li><i class="fa-solid fa-check"></i> Performance Optimization</li>
+                            <li><i class="fa-solid fa-check"></i> Version Updates</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="cta" class="animate-on-scroll">
+            <h1>Need a specific solution?</h1>
+            <p>Let's discuss how our services can align with your business goals.</p>
+            <a href="contact.html" class="btn-secondary">Book a Consultation</a>
+        </section>
+    </main>
+
+    <footer>
+        <img src="static/img/logo-footer.png" alt="TwoAxis Logo White">
+        <div>
+            <a href="https://facebook.com/twoaxis" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://linkedin.com/company/twoaxis" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/twoaxis" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        </div>
+        <label>&copy; 2025 TwoAxis. All Rights Reserved.</label>
+    </footer>
+</body>
 </html>
