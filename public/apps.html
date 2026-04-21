@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#a72222" />
-    <title>TwoAxis | Contact Us</title>
+    <title>TwoAxis | Our Apps</title>
 
-    <meta name="description" content="Get in touch with TwoAxis. We are ready to help you build your next big web or mobile application.">
-    <meta name="keywords" content="contact TwoAxis, hire web developers, hire app developers, tech agency contact">
+    <meta name="description" content="Discover apps developed by TwoAxis including TwoAxis Finance for managing personal finances.">
+    <meta name="keywords" content="TwoAxis apps, TwoAxis Finance, personal finance app, mobile apps">
 
     <link rel="icon" href="static/img/favicon.ico">
     <link rel="stylesheet" href="static/style/utilities.css">
     <link rel="stylesheet" href="static/style/master.css">
-    <link rel="stylesheet" href="static/style/contact.css">
+    <link rel="stylesheet" href="static/style/apps.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
     <script src="static/js/navbar.js" defer></script>
@@ -28,10 +28,10 @@
             <a href="services.html">Services</a>
             <a href="approach.html">Our Process</a>
             <a href="clients.html">Clients</a>
-            <a href="apps.html">Our Apps</a>
+            <a href="apps.html" class="active">Our Apps</a>
         </div>
         <div>
-            <a href="contact.html" class="nav-cta active">Let's Talk</a>
+            <a href="contact.html" class="nav-cta">Let's Talk</a>
             <button id="expand-btn" onclick="toggleNavbar()" aria-label="Toggle Menu"><i class="fa-solid fa-bars"></i></button>
         </div>
     </nav>
@@ -39,33 +39,35 @@
     <main>
         <header class="page-header animate-on-scroll">
             <div class="container text-center">
-                <h1>Let's build together.</h1>
-                <p class="subtitle">Reach out to us directly to discuss your project, your goals, and your timeline.</p>
+                <h1>Our Apps.</h1>
+                <p class="subtitle">Explore the suite of mobile and web applications developed by TwoAxis to make life easier.</p>
             </div>
         </header>
 
-        <section class="contact-section animate-on-scroll">
-            <div class="container contact-container">
-                <div class="contact-info text-center">
-                    <h2>Get in touch</h2>
-                    <p>Whether you need a full digital transformation or a specific development team, we are here to help.</p>
-
-                    <div class="info-items-centered">
-                        <div class="info-item">
-                            <i class="fa-solid fa-envelope"></i>
-                            <div>
-                                <h4>Email Us</h4>
-                                <a href="mailto:contact@twoaxis.org">contact@twoaxis.org</a>
-                            </div>
+        <section class="apps-section animate-on-scroll">
+            <div class="container">
+                <div class="apps-grid">
+                    <!-- App 1 -->
+                    <div class="app-card">
+                        <div class="app-logo-wrapper">
+                            <img src="static/img/apps/finance.webp" alt="TwoAxis Finance Logo">
                         </div>
-                    </div>
-
-                    <div class="social-links centered-socials">
-                        <a href="https://facebook.com/twoaxis" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
-                        <a href="https://linkedin.com/company/twoaxis" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                        <div class="app-info">
+                            <h3>TwoAxis Finance</h3>
+                            <p>An app to manage your personal finances.</p>
+                            <a href="https://play.google.com/store/apps/details?id=org.twoaxis.finance" target="_blank" rel="noopener noreferrer" class="store-link">
+                                <i class="fa-brands fa-google-play"></i> Get it on Google Play
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
+        </section>
+
+        <section id="cta" class="animate-on-scroll">
+            <h1>Have an app idea?</h1>
+            <p>Let's discuss how we can bring your next idea to life.</p>
+            <a href="contact.html" class="btn-secondary">Book a Consultation</a>
         </section>
     </main>
 
