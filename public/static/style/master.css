@@ -43,6 +43,7 @@ nav div:nth-of-type(2) {
 	align-items: center;
 	justify-content: center;
     gap: 15px;
+	flex: 2;
 }
 nav div:nth-of-type(2) a {
 	text-decoration: none;
@@ -51,7 +52,6 @@ nav div:nth-of-type(2) a {
 	font-size: 15px;
     font-weight: 500;
     border-radius: 8px;
-    transition: all 0.3s ease;
 }
 nav div:nth-of-type(2) a:hover {
 	background: #f0f0f0;
@@ -130,7 +130,7 @@ footer label {
 	font-size: 14px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
 	nav {
 		padding: 0 5%;
 	}

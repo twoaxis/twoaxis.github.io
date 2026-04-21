@@ -76,10 +76,13 @@ header h2 {
     margin: 0 auto;
 }
 .client-logos img {
-    height: 70px;
+    height: 50px;
     object-fit: contain;
     filter: grayscale(100%) opacity(0.6);
     transition: all 0.3s ease;
+}
+.client-logos img:nth-of-type(3) {
+    height: 120px;
 }
 .client-logos img:hover {
     filter: grayscale(0%) opacity(1);
