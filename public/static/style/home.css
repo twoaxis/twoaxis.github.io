@@ -1,45 +1,56 @@
 /* Hero Section */
 header {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	max-width: 1200px;
-	margin: 80px auto 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 80px auto 120px;
     padding: 0 20px;
     gap: 50px;
 }
+
 header .hero-content {
     flex: 1;
     max-width: 600px;
 }
+
 header .hero-image {
     flex: 1;
     display: flex;
     justify-content: center;
 }
+
 header .hero-image img {
-	width: 100%;
+    width: 100%;
     max-width: 500px;
     animation: float 6s ease-in-out infinite;
 }
 
 @keyframes float {
-	0% { transform: translateY(0px); }
-	50% { transform: translateY(-20px); }
-	100% { transform: translateY(0px); }
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
 }
 
 header h1 {
-	font-weight: 800;
-	font-size: 64px;
-	line-height: 1.1;
-	margin-bottom: 24px;
+    font-weight: 800;
+    font-size: 64px;
+    line-height: 1.1;
+    margin-bottom: 24px;
     letter-spacing: -1px;
 }
 
 header h2 {
-	font-weight: 400;
-	font-size: 20px;
+    font-weight: 400;
+    font-size: 20px;
     color: var(--text-muted);
     margin-bottom: 40px;
     line-height: 1.5;
@@ -58,6 +69,7 @@ header h2 {
     border-top: 1px solid var(--border-color);
     border-bottom: 1px solid var(--border-color);
 }
+
 .social-proof p {
     font-size: 14px;
     color: var(--text-muted);
@@ -66,6 +78,7 @@ header h2 {
     margin-bottom: 30px;
     font-weight: 600;
 }
+
 .client-logos {
     display: flex;
     justify-content: center;
@@ -75,15 +88,18 @@ header h2 {
     max-width: 1000px;
     margin: 0 auto;
 }
+
 .client-logos img {
     height: 50px;
     object-fit: contain;
     filter: grayscale(100%) opacity(0.6);
     transition: all 0.3s ease;
 }
+
 .client-logos img:nth-of-type(3) {
-    height: 120px;
+    height: 40px;
 }
+
 .client-logos img:hover {
     filter: grayscale(0%) opacity(1);
     transform: scale(1.05);
@@ -91,15 +107,17 @@ header h2 {
 
 /* Services Section */
 section#services-overview {
-	text-align: center;
-	padding: 100px 20px;
+    text-align: center;
+    padding: 100px 20px;
     background-color: var(--bg-white);
 }
+
 section#services-overview h1 {
-	font-size: 48px;
+    font-size: 48px;
     font-weight: 800;
     margin-bottom: 15px;
 }
+
 section#services-overview .subtitle {
     font-size: 18px;
     color: var(--text-muted);
@@ -110,11 +128,11 @@ section#services-overview .subtitle {
 }
 
 .services-grid {
-	display: grid;
+    display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-	gap: 30px;
-	max-width: 1200px;
-	margin: 0 auto;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .service-card {
@@ -128,12 +146,12 @@ section#services-overview .subtitle {
 
 .service-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 20px 40px rgba(0,0,0,0.05);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
     border-color: var(--primary);
 }
 
 .service-card i {
-	font-size: 40px;
+    font-size: 40px;
     color: var(--primary);
     margin-bottom: 20px;
     background: rgba(167, 34, 34, 0.1);
@@ -146,15 +164,15 @@ section#services-overview .subtitle {
 }
 
 .service-card h2 {
-	font-size: 24px;
-	margin-bottom: 15px;
-	font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-weight: 700;
 }
 
 .service-card p {
-	font-size: 16px;
+    font-size: 16px;
     color: var(--text-muted);
-	font-weight: 400;
+    font-weight: 400;
     line-height: 1.6;
 }
 
@@ -164,23 +182,28 @@ section#process {
     padding: 100px 20px;
     border-top: 1px solid var(--border-color);
 }
+
 .process-container {
     max-width: 1000px;
     margin: 0 auto;
 }
+
 .process-header {
     text-align: center;
     margin-bottom: 60px;
 }
+
 .process-header h1 {
     font-size: 48px;
     font-weight: 800;
     margin-bottom: 15px;
 }
+
 .timeline {
     position: relative;
     padding-left: 40px;
 }
+
 .timeline::before {
     content: '';
     position: absolute;
@@ -190,13 +213,16 @@ section#process {
     width: 2px;
     background: var(--border-color);
 }
+
 .timeline-item {
     position: relative;
     margin-bottom: 50px;
 }
+
 .timeline-item:last-child {
     margin-bottom: 0;
 }
+
 .timeline-dot {
     position: absolute;
     left: -49px;
@@ -208,54 +234,63 @@ section#process {
     border: 4px solid var(--bg-light);
     box-shadow: 0 0 0 4px rgba(167, 34, 34, 0.2);
 }
+
 .timeline-content {
     background: var(--bg-white);
     padding: 30px;
     border-radius: 12px;
     border: 1px solid var(--border-color);
-    box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
 }
+
 .timeline-content h3 {
     font-size: 20px;
     margin-bottom: 10px;
     color: var(--primary);
 }
+
 .timeline-content h4 {
     font-size: 24px;
     margin-bottom: 15px;
 }
+
 .timeline-content p {
     color: var(--text-muted);
 }
 
 /* Why Us / Team Section */
 section#team {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	max-width: 1200px;
-	margin: 100px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 100px auto;
     padding: 0 20px;
-	gap: 60px;
+    gap: 60px;
 }
+
 section#team .team-content {
-	flex: 1;
+    flex: 1;
 }
+
 section#team .team-content h1 {
-	font-size: 48px;
-	line-height: 1.2;
-	margin-bottom: 24px;
+    font-size: 48px;
+    line-height: 1.2;
+    margin-bottom: 24px;
     font-weight: 800;
 }
+
 section#team .team-content p {
-	font-size: 18px;
+    font-size: 18px;
     color: var(--text-muted);
     margin-bottom: 30px;
 }
+
 .benefits-list {
     list-style: none;
     margin-bottom: 40px;
 }
+
 .benefits-list li {
     display: flex;
     align-items: center;
@@ -264,18 +299,21 @@ section#team .team-content p {
     font-size: 16px;
     font-weight: 500;
 }
+
 .benefits-list li i {
     color: var(--primary);
     background: rgba(167, 34, 34, 0.1);
     padding: 8px;
     border-radius: 50%;
 }
+
 section#team .team-image {
-	flex: 1;
+    flex: 1;
     position: relative;
 }
+
 section#team .team-image img {
-	width: 100%;
+    width: 100%;
     border-radius: 20px;
     box-shadow: -20px 20px 0 rgba(167, 34, 34, 0.1);
 }
@@ -288,11 +326,13 @@ section#cta {
     padding: 100px 20px;
     margin-top: 50px;
 }
+
 section#cta h1 {
     font-size: 48px;
     font-weight: 800;
     margin-bottom: 20px;
 }
+
 section#cta p {
     font-size: 20px;
     opacity: 0.9;
@@ -301,6 +341,7 @@ section#cta p {
     margin-left: auto;
     margin-right: auto;
 }
+
 section#cta .btn-secondary {
     font-size: 18px;
     padding: 15px 40px;
@@ -308,29 +349,36 @@ section#cta .btn-secondary {
 
 /* Media Queries */
 @media (max-width: 900px) {
-	header {
-		flex-direction: column;
+    header {
+        flex-direction: column;
         text-align: center;
         margin: 40px auto 60px;
-	}
+    }
+
     header .hero-content {
         max-width: 100%;
     }
+
     .hero-buttons {
         justify-content: center;
     }
+
     header h1 {
         font-size: 48px;
     }
+
     section#team {
         flex-direction: column;
     }
+
     .timeline::before {
         left: 20px;
     }
+
     .timeline-dot {
         left: -29px;
     }
+
     .timeline {
         padding-left: 60px;
     }
@@ -340,12 +388,18 @@ section#cta .btn-secondary {
     header h1 {
         font-size: 36px;
     }
-    section#services-overview h1, section#process .process-header h1, section#team .team-content h1, section#cta h1 {
+
+    section#services-overview h1,
+    section#process .process-header h1,
+    section#team .team-content h1,
+    section#cta h1 {
         font-size: 36px;
     }
+
     .client-logos {
         gap: 40px;
     }
+
     .client-logos img {
         height: 50px;
     }
